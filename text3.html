@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tex3.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Title -->
+      <h1 id="title">Survey Form</h1>
+      <!-- Description  -->
+      <p id="description">Please fill in all the required information.</p>
+      <!-- Form  -->
+      <form id="survey-form">
+        <!-- Input name  -->
+        <label class="main-sel" id="name-label">Name:</label>
+        <input
+          placeholder="Input name"
+          type="text"
+          name="name"
+          id="name"
+          required
+        />
+        <!-- Input email  -->
+        <label class="main-sel" id="email-label">Email:</label>
+        <input
+          placeholder="Input email"
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+        <!-- Input number  -->
+        <label class="main-sel" id="number-label">Number phone:</label>
+        <input
+          placeholder="Input number"
+          type="number"
+          name="number"
+          id="number"
+          min="0"
+          max="9"
+        />
+        <!-- Select language  -->
+        <label class="main-sel" id="language">Language:</label>
+        <select name="select" id="dropdown">
+          <option value="english">English</option>
+          <option value="other language">Other language</option>
+        </select>
+        <!-- Select Gender  -->
+        <label class="main-sel" for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <span>Male</span>
+        <input type="radio" id="female" name="gender" value="female" />
+        <span>Female</span>
+        <!-- Select your interests  -->
+        <label class="main-sel" for="interests">Select your interests:</label>
+
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <span>Sports</span>
+
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <span>Music</span>
+
+        <input type="checkbox" id="movies" name="interests" value="movies" />
+        <span>Movies</span>
+        <!-- Additional comments  -->
+        <label class="main-sel" for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <!-- Submit  -->
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
